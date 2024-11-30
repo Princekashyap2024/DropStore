@@ -1,0 +1,100 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  max-height: 800px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-2xl) 0;
+  margin-bottom: var(--spacing-3xl);
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 var(--spacing-lg);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  margin-bottom: var(--spacing-lg);
+  letter-spacing: -0.02em;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-2xl);
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  display: inline-flex;
+  padding: var(--spacing-md) var(--spacing-2xl);
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-medium);
+  background-color: var(--accent-color);
+  color: white;
+  border-radius: var(--border-radius);
+  transition: transform var(--transition-speed),
+              background-color var(--transition-speed);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-cta:hover {
+  background-color: #ea580c;
+  transform: translateY(-2px);
+}
+
+.hero-cta:active {
+  transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+    min-height: 500px;
+    background-attachment: scroll;
+  }
+
+  .hero-content {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .hero-subtitle {
+    padding: 0 var(--spacing-md);
+  }
+}

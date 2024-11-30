@@ -1,0 +1,36 @@
+/* Navigation Styles */
+.nav {
+  height: var(--header-height);
+  background-color: var(--card-background);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+}

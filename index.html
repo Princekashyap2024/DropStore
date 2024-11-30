@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropshipping Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/variables.css">
+    <link rel="stylesheet" href="./src/styles/base.css">
+    <link rel="stylesheet" href="./src/styles/components/button.css">
+    <link rel="stylesheet" href="./src/styles/components/cart.css">
+    <link rel="stylesheet" href="./src/styles/components/footer.css">
+    <link rel="stylesheet" href="./src/styles/components/hero.css">
+    <link rel="stylesheet" href="./src/styles/components/nav.css">
+    <link rel="stylesheet" href="./src/styles/components/products.css">
+    <link rel="stylesheet" href="./src/styles/components/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav-content">
+        <h1>DropStore</h1>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="cart-widget">
+          <button id="cart-button" class="button">
+            Cart (<span id="cart-count">0</span>)
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="cart-container" id="cart-container">
+      <h3>Shopping Cart</h3>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        Total: $<span id="cart-total">0.00</span>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">Premium Products, Unbeatable Prices</h2>
+        <p class="hero-subtitle">Discover our curated collection of high-quality products delivered straight to your door. Shop smarter with our exclusive deals and worldwide shipping.</p>
+        <a href="#products" class="hero-cta">Shop Now</a>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="search-section">
+        <input 
+          type="text" 
+          id="search-input" 
+          placeholder="Search products..."
+          class="search-input"
+        >
+      </section>
+
+      <section class="products-grid" id="products-grid">
+        <!-- Products will be dynamically inserted here -->
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About DropStore</h3>
+            <p>Your trusted source for quality products at competitive prices. We deliver worldwide with a commitment to customer satisfaction.</p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#shipping">Shipping Info</a></li>
+              <li><a href="#returns">Returns Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> 123 Store Street, City, Country</p>
+              <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> contact@dropstore.com</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to receive updates and special offers!</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Enter your email" class="newsletter-input">
+              <button class="button newsletter-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 DropStore. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#sitemap">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./src/js/cart.js"></script>
+    <script type="module" src="./src/js/search.js"></script>
+    <script type="module" src="./src/data/pages/about.js"></script>
+    <script type="module" src="./src/data/pages/contact.js"></script>
+    <script type="module" src="./src/data/pages/home.js"></script>
+    <script type="module" src="./src/data/pages/products.js"></script>
+    <script type="module" src="./src/data/pages/returns.js"></script>
+    <script type="module" src="./src/data/pages/shipping.js"></script>
+    <script type="module" src="./src/data/products.js"></script>
+  </body>
+</html>

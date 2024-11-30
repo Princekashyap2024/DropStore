@@ -1,0 +1,41 @@
+/* CSS Custom Properties */
+:root {
+  /* Colors */
+  --primary-color: #2563eb;
+  --secondary-color: #1d4ed8;
+  --accent-color: #f59e0b;
+  --background-color: #f8fafc;
+  --text-color: #1e293b;
+  --card-background: #ffffff;
+  --border-color: #e2e8f0;
+  --footer-background: #1e293b;
+  --footer-text: #e2e8f0;
+  --footer-link: #94a3b8;
+
+  /* Layout */
+  --header-height: 70px;
+  --container-max-width: 1280px;
+  --container-padding: 2rem;
+  
+  /* Typography */
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height-base: 1.5;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  /* Transitions */
+  --transition-speed: 0.2s;
+  
+  /* Border Radius */
+  --border-radius: 6px;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+  --spacing-3xl: 4rem;
+}
